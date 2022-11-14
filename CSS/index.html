@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        
+        /* Universal selector */
+        body {
+            background: red;
+
+        }
+        p{
+            color: white;
+            background: black;
+        }
+        li{
+            background: yellow;
+        }
+
+        /* Direct selection */
+        div > li{
+            background: green;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>This is h1</h1>
+
+    <p>I am paragraph p1</p>
+    <p>I am paragraph p2</p>
+    <p>I am paragraph p3</p>
+    <p>I am paragraph p4</p>
+
+    <div>
+        <li>This list 1</li>
+        <li>This list 2</li>
+        <li>This list 3</li>
+        <li>This list 4</li>
+        <ul>
+            <li>this sublist 1</li>
+            <li>this sublist 2</li>
+            <li>this sublist 3</li>
+        </ul>
+    </div>
+
+</body>
+</html>
