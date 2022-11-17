@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
-    <style>
-        
-        /* Universal selector */
-        body {
-            background: red;
-
-        }
-        p{
-            color: white;
-            background: black;
-        }
-        li{
-            background: yellow;
-        }
-
-        /* Direct selection */
-        div > li{
-            background: green;
-        }
-
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     
-    <h1>This is h1</h1>
+    <style>
+     
+      /* universal selector */
+      
 
-    <p>I am paragraph p1</p>
-    <p>I am paragraph p2</p>
-    <p>I am paragraph p3</p>
-    <p>I am paragraph p4</p>
+      /* individual selector */
+      
+      /* class and id selector */
+      
+      /* and selector (chained) */
+      
+      /* combined selector */
+      
+
+      /* inside an element */
+      
+      /* direct child */
+      
+
+      /* sibling  ~ or + */
+      
+    </style>
+  </head>
+  <body>
+    <div>Welcome to live class</div>
+    <span>Span is just a span, nothing more</span>
+    <p>We all know paragraph</p>
+    <ul>
+      <li class="bg-black text-white">item1</li>
+      <li >item2</li>
+      <li >item3</li>
+      <li >item4</li>
+      <li>item5</li>
+    </ul>
 
     <div>
-        <li>This list 1</li>
-        <li>This list 2</li>
-        <li>This list 3</li>
-        <li>This list 4</li>
-        <ul>
-            <li>this sublist 1</li>
-            <li>this sublist 2</li>
-            <li>this sublist 3</li>
-        </ul>
+      <p>lorem</p>
+      <li>awesome</li>
+      <ul>
+        <li>highlight me <a href="#">test</a></li>
+        <li>highlight me</li>
+      </ul>
     </div>
 
-</body>
+    <section>
+      <p class="sibling">Test 1</p>
+      <p >Test 2</p>
+      <p>Test 3</p>
+      <p >Test 4</p>
+      <p>Test 5</p>
+    </section>
+  </body>
 </html>
