@@ -10,20 +10,46 @@
      
       /* universal selector */
       
-
+      /* * {
+        background: red;
+      } */
+      body {
+        background: black;
+        color: aqua;
+      }
       /* individual selector */
-      
+      p {
+        color: white;
+      }
       /* class and id selector */
-      
+      .warning {
+        background: yellow;
+      }
+      #danger {
+            background: red;
+      }
       /* and selector (chained) */
-      
+      li.bg-black.text-white{
+        background: pink;
+        color: blue;
+      }
       /* combined selector */
-      
+      span, li {
+        background: green;
+        color: white;
+      }
 
       /* inside an element */
       
+      div ul li {
+        background: white;
+        color: red;
+      }
+
       /* direct child */
-      
+      ul a{
+        color: black;
+      }
 
       /* sibling  ~ or + */
       
