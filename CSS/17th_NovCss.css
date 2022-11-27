@@ -1,0 +1,33 @@
+
+*{
+    background-color: green;
+    
+}
+h2{
+    text-align: center;
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.box1{
+    background-color: aqua  ;
+    width: 500px;
+    height: 500px;
+    background: url("https://media.istockphoto.com/id/1339089751/photo/loving-couple-having-fun-renovating-their-house-and-painting-the-walls.jpg?b=1&s=170667a&w=0&k=20&c=g743UKWfqthCfahMiDPN1Xca3wH0CL-p-sqxHxwpu4Y=") center/80% repeat-x;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.par{
+    margin: 20px;
+    padding: 10px;
+    color: red;
+}
+
+p{
+    color: yellow;
+    background-color: black;
+    margin: 1px;
+}
+
