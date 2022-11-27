@@ -23,6 +23,8 @@ h2{
     margin: 20px;
     padding: 10px;
     color: red;
+    text-decoration-line:overline ;
+    text-align: center;
 }
 
 p{
