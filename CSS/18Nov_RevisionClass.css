@@ -1,0 +1,34 @@
+/* Selector in CSS */
+
+
+/* Universal Selector */
+*{
+    background-color: black;
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+/* Individual */
+h2{
+    color: blue;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+/* Class and id => .(dot is for class # is for id) */
+.myClass{
+    color: white;
+}
+.myClass:hover{
+    color: red;  
+}
+
+/* And selector */
+.outer.inner{
+    color: yellow;
+    background-color: red;
+}
+
+p,span{
+    color: red;
+}
