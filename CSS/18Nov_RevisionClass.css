@@ -29,6 +29,27 @@ h2{
     background-color: red;
 }
 
+/* Combined selector */
 p,span{
     color: red;
+}
+
+/* Inside a element */
+
+div ul li{
+    color: red;
+    background-color: white;
+}
+
+/* Direct child*/
+
+div>p{
+    color: green;
+    background-color: yellow;
+}
+
+/* siblings + */
+.sibling + li{
+    background-color: red;
+    color: white;
 }
