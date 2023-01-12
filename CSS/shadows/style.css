@@ -1,0 +1,25 @@
+*{
+    margin: 20px;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+
+.textShadow{
+    color: black;
+    /* text-shadow: -3px -1px grey ; */
+    text-shadow: 3px 1px 2px red;
+    /* font-size: larger; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    text-shadow: 2px 1px grey;
+    color: aqua;
+}
+
+.box1{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    box-shadow: 12px 12px green, -10px -10px red;
+}
