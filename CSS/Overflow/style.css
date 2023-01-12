@@ -1,0 +1,13 @@
+
+.box1{
+    min-height: 30px;
+    max-height: 500px;
+    border: 1px solid black;
+    width: 300px;
+    /* overflow: visible; */
+    /* overflow: scroll; */
+    overflow: hidden;
+    overflow: auto;
+    /* overflow: hidden; */
+    color: blue;
+}
