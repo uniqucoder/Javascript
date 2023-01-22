@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrraper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container{
+    height: 100%;
+    margin: auto 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.nav-items{
+    display: flex;
+    gap:20px
+}
+.menu{
+    display: flex;
+    gap: 20px;
+}
