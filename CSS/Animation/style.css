@@ -1,5 +1,5 @@
 .container{
-    width: 100%;
+    width: 900px;
     height: 700px;
     background-color: yellowgreen;
     margin: 10px;
@@ -17,7 +17,7 @@
     /* transition: background-color 2s ease-in-out 3s;
      */
 
-    transition: all 200ms ease ;
+    transition: all 5s ease 1s ;
     
 
  
@@ -25,7 +25,9 @@
 
 .box:hover{
 
-    background-color: red;
+    /* background-color: red;
 
-    transform: rotate(45deg);
+    transform: rotate(45deg); */
+    
+    transform: scale(2) translateX(700px) rotate(360deg) ;
 }
