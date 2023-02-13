@@ -94,7 +94,23 @@ let src = {
 
 // console.log(src);
 
-for (let key in src)
+// for (let key in src)
+// {
+//     console.log(key ,src[key]);
+// }
+
+for(let keys of Object.keys(src))
 {
-    console.log(key , src[key]);
+    console.log(keys);
 }
+
+
+
+if('d' in src)
+{
+    console.log("present")
+}
+else{
+    console.log("Absent");
+}
+
