@@ -131,3 +131,12 @@ let pos = array.filter(function(value){
 });
 
 console.log(pos);
+
+// Mapping an array with an Object
+
+let values = [1,2,-3,-4];
+
+let filtered = values.filter(value=> value >= 0);
+
+let mapped = filtered.map(num => {value: num});
+console.log(mapped);
