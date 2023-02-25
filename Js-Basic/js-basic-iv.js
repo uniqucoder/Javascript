@@ -41,29 +41,49 @@ console.log(sum(1,3,5,6,7));
 
 // Getter and setter
 
-let person = {
-    fName:'Chaitya',
-    lName:'Tupsamudre',
+// let person = {
+//     fName:'Chaitya',
+//     lName:'Tupsamudre',
 
-    get fullName()
-    {
-        return ` ${this.fName} ${this.lName}`;
-    },
+//     get fullName()
+//     {
+//         return ` ${this.fName} ${this.lName}`;
+//     },
 
-    set fullName(value)
-    {
-        let parts = value.split(' ');
-        this.fName = parts[0];
-        this.lName = parts[1];
-    }
+//     set fullName(value)
+//     {
+//         if(typeof value !== String)
+//         {
+//             throw new Error("Kindly enter String value");
+//         }
+//         let parts = value.split(' ');
+//         this.fName = parts[0];
+//         this.lName = parts[1];
+//     }
 
 
-}
+// }
 
 // console.log(` ${person.fName}    ${person.lName}`);
-console.log(person.fullName);
-person.fullName='Rahul Kumar';
-console.log("Updated Full Name");
-console.log(person.fullName);
+// console.log(person.fullName);
+// person.fullName='Rahul Kumar';
 
 
+// try{
+//     person.fullName=true;
+// }
+// catch(e)
+// {
+//     alert(e);
+// }
+// console.log("Updated Full Name");
+// console.log(person.fullName);
+
+
+// Reducing an array using reduce method
+
+let arr =[-1,-2,-3,-4,5];
+
+let totalSum = arr.reduce((accumulator,currentValue) => accumulator + currentValue ,0);
+
+console.log(totalSum);
