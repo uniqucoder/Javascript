@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<style>
+    #wrraper{
+        width: 100wh;
+        height: 100vh;
+        background: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        gap: 10px;
+    }
+    .block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: flex-row;
+        gap: 10px;
+        display: block;
+        background: white;
+        color: black;
+        text-align: center;
+
+    }
+   
+    button{
+        padding: 10px;
+        border: 1px solid black;
+        width: 40px;
+    }
+</style>
+<body>
+
+    <div id="wrraper">
+
+            <div>Increment and decrement</div>
+            <div class="block">
+                <button onclick="decr()">-</button>
+                <div id="count">0</div>
+                <button onclick="incr()">+</button>
+            </div>
+        
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+</html>

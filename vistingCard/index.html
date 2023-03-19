@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiting card</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #wrraper{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        /* align-content: center; */
+    }
+    .card{
+        /* font-family: ; */
+        height:250px;
+        width: 500px;
+        /* height: 633px;
+        width: 1083px; */
+
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 1px solid black;
+        padding: 15px;
+        color: black;
+        gap: 2px;
+    }
+    .header{
+        /* justify-content: center; */
+        text-align: center;
+        padding-bottom: 5px;
+        font-weight: bold;
+        color: #0a4d83;
+    }
+    .header2{
+        display: flex;
+        /* height: 20px; */
+        /* gap: 10px; */
+        justify-content: space-between;
+    }
+    .logo{
+        height: 20px;
+    }
+    img{
+        width:130px
+    }
+    .mob{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .nameText{
+        display: flex;
+        flex-direction: column;
+        padding-top: 45px;
+        justify-content: center;
+        align-items: center;
+    }
+    .name{
+        color: #0a4d83;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder ;
+        font-size: 25px;
+    }
+    .desiganation{
+        color: black;
+        font-size: 15px;
+    }
+    .lineGrediant{
+        /* background: linear-gradient(#FBC707, #fbd344); */
+        background: linear-gradient(45deg ,orange,#fafafa,#fafafa,green);
+        height: 5px;
+        width: 100%;
+    }
+    .addre{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        font-size: 13px;
+        padding-top: 10px;
+    }
+
+    
+</style>
+<body>
+    <div id="wrraper">
+        <div class="card" id="myElement">
+            <div class="header" >ज़िन्दगी के साथ भी, ज़िन्दगी के बाद भी।</div>
+            <div class="header2">
+                <div class="logo"><img src="logo.png" alt=""></div>
+                
+                <div class="mob">
+                    <p>Mob. 9049563381/</p>
+                    <p> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9309702127</p>
+                </div>
+    
+            </div>
+            <div class="nameText">
+                <div class="name">Megha M. Tupsamudre</div>
+                <div class="desiganation">Insurance Consultant(1111395J)</div>
+            </div>
+            <div class="lineGrediant"></div>
+            <div class="addre">
+                <p style="font-weight: 600; text-transform: uppercase;">Life insurance corporation of india</p>
+                <p><strong>Office:</strong> Br. 95-J, Bagga Chambers, Opp. Akashwani, Jalna Road, Sambhajinagar</p>
+                <p><b>Email:</b> meghat2020@gmail.com</p>
+            </div>
+        </div>
+
+
+        
+    </div>
+    <!-- <button id="dwbtn">Download</button> -->
+    <button id="download-btn">Download as Image</button>
+    <!-- <script src="dom-to-image.js"></script> -->
+    <!-- <Script>
+        import domtoimage from 'dom-to-image';
+        var card = document.getElementsByClassName("card");
+        var download_btn = document.getElementById('dwbtn')
+
+        download_btn.addEventListener('click',()=>{
+            domtoimage.toJpeg('card').then((data)=> {
+                var link = document.createElement('a');
+                link.download= 'visiting-card.jpeg';
+                link.href =data;
+                link.click();
+            })
+        })
+    </Script> -->
+    <script>
+//         const domElement = document.getElementById('myElement');
+
+//        // Create a new XMLSerializer object
+//        const serializer = new XMLSerializer();
+
+//        // Serialize the DOM element into an XML string
+//        const xmlString = serializer.serializeToString(domElement);
+
+//        // Create a new DOMParser object
+//        const parser = new DOMParser();
+
+//        // Parse the XML string into an SVG element
+//        const svgElement = parser.parseFromString(xmlString, 'image/svg+xml').documentElement;
+
+//        // Now you can use the `svgElement` however you want, for example:
+//        document.body.appendChild(svgElement);
+       
+
+//        // Get the SVG element that you want to download
+//     const svgElement1 = document.getElementById('svgElement');
+
+//     // Create a new XMLSerializer object
+//     const serializer1 = new XMLSerializer();
+
+//     // Serialize the SVG element into an XML string
+//     const xmlString1 = serializer1.serializeToString(svgElement);
+
+//     // Create a data URL for the SVG image
+//     const dataURL = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(xmlString);
+
+//     // Create a link element for downloading the SVG image
+//     const downloadLink = document.createElement('a');
+//     downloadLink.href = dataURL;
+//     downloadLink.download = 'myImage.svg';
+
+//     // Click the link to trigger the download
+//     document.body.appendChild(downloadLink);
+//     downloadLink.click();
+//     document.body.removeChild(downloadLink);
+
+
+    function download() {
+    var card = document.getElementById('myElement');
+    html2canvas(card, {scale: 2}).then(function(canvas) {
+    var link = document.createElement('a');
+    link.download = 'visiting-card11.png';
+    link.href = canvas.toDataURL();
+    link.click();
+  });
+}
+
+var downloadBtn = document.getElementById('download-btn');
+downloadBtn.addEventListener('click', download);
+   </script>
+
+    
+</body>
+</html>
